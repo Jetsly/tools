@@ -52,7 +52,7 @@
           this.imgUrl = URL.createObjectURL(file)
           const img = new Image()
           img.onload = () => {
-            const w = Math.min(750, img.naturalWidth)
+            const w = img.naturalWidth;
             const h = img.naturalHeight / img.naturalWidth * w
             resolve({
               img: img,
